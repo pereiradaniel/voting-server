@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    // Mocha recursively finds and runs all tests using Babel to transpile ES6
+    "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "keywords": [],
   "author": "",
