@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    // Mocha recursively finds and runs all tests using Babel to transpile ES6
     "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "keywords": [],
@@ -18,7 +17,6 @@
     "mocha": "~3.1.2"
   },
   "babel": {
-    // Enable Babel's ES6/ES2015 language support
     "presets":["es2015"]
   }
 }
