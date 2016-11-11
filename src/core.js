@@ -21,7 +21,7 @@ export function vote(state, entry) {
 }
 
 function getWinners(vote) {
-	ig (!vote) return [];
+	if (!vote) return [];
 	const [a, b] = vote.get('pair');
 	const aVotes = vote.getIn(['tally', a], 0);
 	const bVotes = vote.getIn(['tally', b], 0);
